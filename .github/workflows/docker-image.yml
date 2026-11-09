@@ -1,25 +1,26 @@
 name: docker-image
 
-on:
-  push:
-    branches:
-      - main
-    tags:
-      - '*.*.*'
-  pull_request_target:
-    types:
-      - assigned
-      - opened
-      - synchronize
-      - reopened
-      # for delete
-      - closed
-    paths-ignore:
-      - 'docs/**'
-      - '.github/workflows/publish-documentation*'
-      - '.github/workflows/deploy-docs*'
-
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     tags:
+#       - '*.*.*'
+#   pull_request_target:
+#     types:
+#       - assigned
+#       - opened
+#       - synchronize
+#       - reopened
+#       # for delete
+#       - closed
+#     paths-ignore:
+#       - 'docs/**'
+#       - '.github/workflows/publish-documentation*'
+#       - '.github/workflows/deploy-docs*'
+# 
+# 
 permissions:
   packages: write
   pull-requests: write

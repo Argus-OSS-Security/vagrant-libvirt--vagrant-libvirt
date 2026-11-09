@@ -1,14 +1,15 @@
 name: Publish Docs
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-      - .github/workflows/publish-documentation.yml
-      - .github/workflows/deploy-docs.yml
-      - .github/workflows/build-docs/**
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - 'docs/**'
+#       - .github/workflows/publish-documentation.yml
+#       - .github/workflows/deploy-docs.yml
+#       - .github/workflows/build-docs/**
+# 
 permissions:
   contents: write
 

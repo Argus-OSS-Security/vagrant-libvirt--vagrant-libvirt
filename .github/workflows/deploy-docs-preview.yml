@@ -1,11 +1,12 @@
 name: Deploy Docs Preview
-on:
-  workflow_run:
-    workflows:
-      - "Build Docs Preview"
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows:
+#       - "Build Docs Preview"
+#     types:
+#       - completed
+# 
 permissions:
   contents: write
   pull-requests: write

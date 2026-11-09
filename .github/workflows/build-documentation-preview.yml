@@ -1,16 +1,17 @@
 name: Build Docs Preview
-on:
-  pull_request:
-    types:
-      - closed
-      - opened
-      - reopened
-      - synchronize
-    paths:
-      - 'docs/**'
-      - '.github/workflows/build-documentation-preview.yml'
-      - '.github/workflows/build-docs/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types:
+#       - closed
+#       - opened
+#       - reopened
+#       - synchronize
+#     paths:
+#       - 'docs/**'
+#       - '.github/workflows/build-documentation-preview.yml'
+#       - '.github/workflows/build-docs/**'
+# 
 jobs:
   build-docs:
     runs-on: ubuntu-latest

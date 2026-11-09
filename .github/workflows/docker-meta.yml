@@ -1,22 +1,23 @@
 name: Docker Metadata
 
-on:
-  workflow_call:
-    inputs:
-      flavor:
-        required: false
-        type: string
-    secrets:
-      DOCKERHUB_USERNAME:
-        required: false
-      DOCKERHUB_ORGANIZATION:
-        required: false
-    outputs:
-      labels:
-        value: ${{ jobs.generate-metadata.outputs.labels }}
-      tags:
-        value: ${{ jobs.generate-metadata.outputs.tags }}
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+#     inputs:
+#       flavor:
+#         required: false
+#         type: string
+#     secrets:
+#       DOCKERHUB_USERNAME:
+#         required: false
+#       DOCKERHUB_ORGANIZATION:
+#         required: false
+#     outputs:
+#       labels:
+#         value: ${{ jobs.generate-metadata.outputs.labels }}
+#       tags:
+#         value: ${{ jobs.generate-metadata.outputs.tags }}
+# 
 jobs:
   generate-metadata:
     name: Generate Metadata

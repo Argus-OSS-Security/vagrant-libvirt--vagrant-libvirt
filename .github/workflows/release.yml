@@ -1,10 +1,11 @@
 name: release
 
-on:
-  push:
-    tags:
-      - '*.*.*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - '*.*.*'
+# 
 jobs:
   publish-release:
     name: Create Release

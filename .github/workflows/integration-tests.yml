@@ -1,15 +1,16 @@
 name: Integration Tests
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    paths-ignore:
-      - 'docs/**'
-      - '.github/workflows/publish-documentation*'
-      - '.github/workflows/deploy-docs*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     paths-ignore:
+#       - 'docs/**'
+#       - '.github/workflows/publish-documentation*'
+#       - '.github/workflows/deploy-docs*'
+# 
 jobs:
   generate-matrix:
     runs-on: ubuntu-latest
